@@ -211,7 +211,7 @@ function getTimelineOrders() {
     const now = Date.now(); const anchorTime = new Date(BASE_YR, BASE_MO, BASE_DA).getTime();
     const autoDailyIncrement = (now - anchorTime) > 0 ? Math.floor((now - anchorTime) / 600000) : 0;
     let liveOffset = parseInt(localStorage.getItem('smm_live_offset')) || 0;
-    return 1150 + autoDailyIncrement + liveOffset;
+    return 50 + autoDailyIncrement + liveOffset;
 }
 
 function addLiveOrderTick() {
